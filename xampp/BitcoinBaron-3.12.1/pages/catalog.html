@@ -1,0 +1,90 @@
+<!--#include virtual="../common/document_head.html"-->
+<!-- catalog.html -->
+  <body>
+    <header>
+      <!--#include virtual="../common/logo.html"-->
+      <!--#include virtual="../common/mainmenu.html"-->
+    </header>
+    <main>
+      <nav id="subMenu">
+        <ul id="subLinks">
+          <li><a href="pages/products.html">Products+Services</a></li>
+          <li><a href="pages/feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+      <article id="textRight">
+        <h3>Products+Services: Product Catalog</h3>
+        <p>Below is a list of our products and services available to you, the customer!</p>
+        <form id="catalogForm">
+          <fieldset>
+            <legend>Products and Services</legend>
+            <table>
+              <tr>
+                <td><label for="product">Product:</label></td>
+                <td><select id="product" name="product">
+                  <option>-- Please Select a Product --</option>
+                  <option>Bitcoin storage device (usb) - 20.00 USD</option>
+                  <option>Mining Hardware - 300.00 USD</option>
+                </select></td>
+              </tr>
+              <tr>
+                <td><label for="service">Service:</label></td>
+                <td><select id="service" name="service">
+                  <option>-- Please Select a Service --</option>
+                  <option>Debt Card Services - 50.00 USD</option>
+                  <option>Bitcoin Monitoring Service - 20.00 USD</option>
+                </select></td>
+              </tr>
+            </table>
+          </fieldset>
+          <fieldset>
+            <legend>Bitcoin BTC</legend>
+            <table>
+              <tr>
+                <td><label for="quantity">Quantity:</label></td>
+                <td><input id="quantity" type="text" name="quantity"
+                  size="7"></td>
+                <td><label for="quantityDenom">Units:</label></td>
+                <td><select id="quantityDenom" name="quantityDenom">
+                  <option>-- Please Select a Size --</option>
+                  <option>1 BTC</option>
+                  <option>1/2 BTC</option>
+                  <option>1/4 BTC</option>
+                  <option>1/8 BTC</option>
+                  <option>1/16 BTC</option>
+                </select></td>
+              </tr>
+            </table>
+          </fieldset>
+          <fieldset>
+            <legend>Tax-Exemption</legend>
+            <table>
+              <tr>
+                <td colspan="2"><label for="taxExempt">Do you have a tax-exempt
+                status?</label> <input id="taxExempt" type="checkbox"
+                name="taxExempt" value="yes"></td>
+              </tr>
+              <tr>
+                <td><label for="zipcode">Please Enter Your Zipcode:</label></td>
+                <td><input id="zipcode" type="text" name="zipcode"
+                  size="15"></td>
+              </tr>
+            </table>
+          </fieldset>
+          <fieldset>
+            <legend>Submit</legend>
+            <table>
+              <tr>
+                <td><input type="submit" value="Submit Order"></td>
+                <td><input type="reset" value="Reset Form"></td>
+              </tr>
+            </table>
+          </fieldset>
+        </form>
+      </article>
+    </main>
+    <footer>
+      <!--#include virtual="../common/footer_content.html"-->
+    </footer>
+  </body>
+</html>

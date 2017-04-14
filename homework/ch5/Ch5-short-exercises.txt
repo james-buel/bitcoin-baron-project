@@ -1,0 +1,29 @@
+Ch5-short-exercises
+
+1.
+    Error: The center element is obsolete. Use CSS instead.
+
+    From line 10, column 7; to line 10, column 14
+
+    in>↩      <center><h4>Bo
+    
+   This error is because the center element is deprecated, and instead this should be done with CSS.
+    
+2. To show "Firstname" and "Lastname" as a placeholder in the form text box, you must add: value="Firstname" after name="firstName"
+and value="Lastname" after name="lastName"
+
+This is overkill in my opinion because the field is already labeled for the user.
+
+3. To have the checkbox indicating that a defailed BMI analysys is desired automatically checked when the page is displayed, 
+you must add: checked after value="yes".
+
+ex: <input type="checkbox" name="details" value="yes" checked></td>
+
+4. If you dont want the inches or pounds to show up in the Units: boxes, you must add an extra option with a &#160; blank char.
+
+ex: <option>&#160;</option> above the inches/pounds etc. This will also allow the blank space to be validated with w3c validator.
+
+5. Besides the additional browser compatibility, the label tags make following the code easier, as it creates identifiers which
+helps me to mentally group the contents together, and remain consistent.
+
+6. It appears that with XHTML and XML it is required, so this method has carried over because it still works.

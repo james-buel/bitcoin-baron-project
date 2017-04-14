@@ -1,0 +1,24 @@
+Chapter 6 Quick Questions (1 - 10)
+
+1. "Those famous 10 days in May" The Netscape browser devs began creating a programming language called LiveScript. Brendan Eich is credited with much of the early work, and legend has it that he essentially created the language in 10 days back in 1995.
+
+2. From 2000 to 2004 Microsoft went its own way away from JavaScript, and it caused development to stall. In 2005 Jesse James Garret recognized and pointed out to the rest of us that a JavaScript-based technique, which he called AJAX, could be used to make web-based applications behave much more like desktop applications, giving rise to a JavaScript renaissance.
+
+3.
+Compiled: There are compilers that translate an entire program into an executable machine language version that can be executed many times, after this one-time translation.
+
+Interpreted: Interpreters translate a program one statement at a time to its machine language equivalent, just prior to the execution of that statement, and do this every time the program is run.
+
+4. A JavaScript program running in a web browser would not be able to access system files or change system configurations.
+
+5. <script> </script>
+
+6. <script src="location/scriptname.js"</script>
+
+7. alert("whatever you want to say here");
+
+8. Good practice dictates that you would use a semicolon ; after each statement.
+
+9. \n is an escape character for newline, where as the <br> tag is used to break to a new line in html only, they are not interchangable, and are context specific.
+
+10. DOM is Document Object Model, a heirarchy of HTML elements in a webpage.

@@ -1,0 +1,221 @@
+Ch4 Short Exercises:
+
+1. Using Firefox, Chrome, and Chromium I an unable to decern any visual differences
+between nature1 nature2 nature3 or nature4.
+
+2. I used the W3C CSS Validation Service on each of the style sheets and no errors
+were detected.
+
+3. 
+--[ ../css/simple.css ]--
+
+/* simple.css for simple.html */
+body { background-color: yellow; }
+h1, h2, h3 { color: blue; }
+p { color: red; font-size: large; }
+body { font-family: Verdana, Arial, sans-serif; }
+ul li { font-style: italic; }
+
+--[ ../simple.html ]--
+
+<!DOCTYPE html>
+<!-- simple.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Nature's Source</title>
+    <link rel="stylesheet" type="text/css" href="css/simple.css">
+  </head>
+  <body>
+    <h1>Welcome to the Website of Nature's Source!</h1>
+    <p>This is our first foray onto the World Wide Web. We are a small
+    company dedicated to the health of our customers through natural
+    remedies.
+    <br>
+    We have a wide range of products that include:</p>
+    <ul>
+      <li>books, and multimedia documents that help you get healthy and
+      stay healthy</li>
+      <li>herbal medicines</li>
+      <li>equipment for injury free body toning exercises</li>
+    </ul>
+    <ol>
+      <li>books, and multimedia documents that help you get healthy and
+      stay healthy</li>
+      <li>herbal medicines</li>
+      <li>equipment for injury free body toning exercises</li>
+    </ol>
+
+  </body>
+</html>
+
+4.
+style_levels.html:
+
+<!DOCTYPE html>
+<!-- style_levels.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Style Levels in CSS</title>
+    <link rel="stylesheet" type="text/css" href="css/style_levels.css">
+    <style type="text/css">
+      p {color:red;}
+    </style>
+  </head>
+
+  <body>
+    <h1>This is external</h1>
+    <p>This is embedded</p>
+    <p style="color:yellow;font-size:18px">This is inline</p>
+  </body>
+</html>
+
+css/style_levels.css:
+
+/* style_levels.css for style_levels.html */
+h1, h2, h3 { color: blue; }
+p { color: blue; font-size: large; }
+
+
+5. "Permitting inline CSS styles defeats the whole purpose of CSS, and
+this practice should be deprecated".
+	I disagree with this overall, assuming that its being used
+sparingly, and is well documented to prevent later confusion. I do
+however understand how the argument could be made, as its much easier
+and clearer to edit the layout of a page when the style choices are
+made in only 2 locations (the external stylesheet, or in the head of
+the file).
+
+6. 
+Serif Fonts (Times New Roman)
+Sans-Serif Fonts (Arial)
+Monospace Fonts (Lucidia Console)
+
+7. System fonts are the default fonts used for the interface on your
+system. Mine on Xfce4 (Debian 8.7) are Sans Monospace and Terminus.
+
+8.
+colors.html:
+
+<!DOCTYPE html>
+<!-- colors.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>16 standard colors in CSS</title>
+  </head>
+  <body>
+    <p style="color:aqua;">Aqua --#00ffff</p>
+    <p style="color:black;">Black -- #000000</p>
+    <p style="color:blue;">Blue -- #0000ff</p>
+    <p style="color:fuchsia;">Fuchsia -- #ff00ff</p>
+    <p style="color:gray;">Gray -- #808080</p>
+    <p style="color:green;">Green -- #008000</p>
+    <p style="color:lime;">Lime -- #00ff00</p>
+    <p style="color:maroon;">Maroon -- #800000</p>
+    <p style="color:navy;">Navy -- #000080</p>
+    <p style="color:olive;">Olive -- #808000</p>
+    <p style="color:purple;">Purple -- #800080</p>
+    <p style="color:red;">Red -- #ff0000</p>
+    <p style="color:silver;">Silver -- #c0c0c0</p>
+    <p style="color:teal;">Teal -- #008080</p>
+    <p style="color:white;background-color:black">White -- #ffffff</p>
+    <p style="color:yellow;">Yellow -- #ffff00</p>
+  </body>
+</html>
+
+9.
+standout.html
+
+<!DOCTYPE html>
+<!-- standout.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <style>
+        h1.Standout {
+            text-align:right;
+            color:red;
+        }
+        p.Standout {
+            text-align:center;
+            color:blue;
+        }
+    </style>
+  </head>
+
+  <body>
+    <h1 class="Standout">h1 .Standout class</h1>
+    <p class="Standout">p .Standout class</p>
+  </body>
+</html>
+
+
+10. pseudo-classes:
+
+:active -- Selects the active link
+Ex. a:active
+
+:hover -- Selects links on mouse over
+Ex. a:hover
+
+:link -- Selects all unvisited links
+Ex. a:link
+
+:visited -- Selects all visited links
+Ex. a:visited
+
+
+11. Pseudo-elements are used to style specified parts of an element.
+Ex.
+
+selector::pseudo-element {
+    property:value;
+}
+
+12. The font size is different in each browser.
+
+13. This changes the formatting for the text, and the margins, as
+well as the colors for each style element.
+
+14.
+removing div#footer smashes the footer into div#page.
+removing float: left from div#content makes the lime colored box shrink.
+removing float: left from all of the elements causes them to stack in order.
+
+15.
+list_to_menu.html:
+
+<!DOCTYPE html>
+<!-- list_to_menu.html -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <style>
+        * {
+          padding: 0;
+          margin: 0;      
+        }         
+        ul {list-style-type: none;}
+        ul li {
+          float: left;
+          width: 99px;
+          border-right: 1px solid black;
+          background-color: #0F0;
+          text-align: center;
+          font-family: Verdana;
+        }       
+        ul li:hover {background-color: #CCC;}
+    </style>
+  </head>
+
+  <body>
+  <ul>
+    <li>Go</li>
+    <li>Stop</li>
+    <li>Speed Up</li>
+    <li>Slow Down</li>
+  </ul>
+  </body>
+</html>

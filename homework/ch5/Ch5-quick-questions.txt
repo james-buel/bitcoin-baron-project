@@ -1,0 +1,52 @@
+Ch5 - Quick Questions
+
+1. The center tag was introduced. The point was that you should avoid the easy
+way out when developing new web pages.
+
+2. The purpose of having a form on a webpage is to allow users to input data,
+and submit it to a server.
+
+3. Nothing is displayed on the page.
+
+4. The action attribute of a form element tells where to send the form-data 
+when the form is submitted (server-side script). The value it has is usually an absolute URL or a relative URL.
+
+5. There was no action attribute, because no data was being submitted to the server, and it is not required in html5.
+
+6. The value cannot be an empty string.
+
+7. 
+type="text" -- allows you to enter text into a text-box
+
+type="radio" -- allows you to select radio buttons with pre-defined text
+
+type="checkbox" -- allows you to check a number of boxes with pre-defined text
+
+type="submit" -- allows you to submit form to a form-handler
+
+type="button" -- allows you to define a button
+
+8. Only 1
+
+9. The value attribute specifies the value of an input element. The value attribute is used differently
+for different input types.
+
+10. The size attribute specifies the visible width, in characters, of an <input> element.
+
+11. The maxlength attribute specifies the maximum number of characters allowed in a text field.
+
+12. You assign them a "label" tag
+
+13. When you use checkboxes, you can select multiple items, whereas radio buttons only allow you to select one item.
+
+14. The checked attribute is a boolean attribute, which when present specifies that an <input> element should be pre-selected when the page loads.
+
+15. Each text item corresponding to an option in the dropdown list-box is specified by the text content of an <option>...</option> tag pair. By default the option that appears first in the markup will appear in the little window of the dropdown list box, so you should leave that option empty if you want the box to appear empty.
+
+16. the fieldset element is used to group related elements in a form, and to draw a box around related elements.
+
+17. The label tag defines a label for an input element. The for attribute of the label tag should be equal to the id attribute of the related element to bind them together.
+
+18. The label element does not rendar as anything spevial for the user. However, it provides a usability improvement for mouse users, because if the user clicks on the text within the label element, it toggles the control.
+
+19. In html5, the form_id value has been added, which specifies one or more forms the label belongs to.
